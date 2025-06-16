@@ -2,7 +2,7 @@
     public string titulo;
     private string autor;
      private int anopublicação;
-     private boolear disponivel;
+     private boolean disponivel;
      livro (string titulo, string autor, anopublicação) { 
      this.titulo=titulo;
      this.autor=autor;
@@ -12,7 +12,7 @@
     public string gettitulo () {
       return this.titulo
     }
-    public string getautor )(){
+    public string getautor (){
       return this.autor;
     }
     public int getanopublicacao () {
@@ -24,8 +24,15 @@
       this.disponivel=false;
     system.out.printlm/("Emprestado com sucesso");
    }else{
-    system.out.primtln('Livro indisponivel!');
+    system.out.println('Livro indisponivel!');
       }
+     } 
     }
-    }
+     public void devolver () {
+      if(!this.disponivel) {
+          this.disponivel=true;
+     system.out.printlm("Desenvolvido com sucesso!");
+    }else{
+     system.out.printlm/("Erro ao desenvolver");
+       }
       }
